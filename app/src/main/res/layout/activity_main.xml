@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/weather"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/temp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="°C"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/cityname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/temp"
+            android:text="city_name"
+            android:textColor="#bf740a"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/weathercondition"
+            android:layout_width="74dp"
+            android:layout_height="74dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp" />
+
+    </RelativeLayout>
+
+
+ <TextView
+        android:textSize="40sp"
+        android:id="@+id/description"
+        android:text="State"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="100dp" />
+    <TextView
+        android:textSize="40sp"
+        android:id="@+id/windspeed"
+        android:text="Wind Speed"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="100dp" />
+
+
+
+</LinearLayout>
